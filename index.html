@@ -1,24 +1,50 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Hello World!!</title>
-    <style>
-        table { border-collapse: collapse; }
-        table, th, td { border: 1px solid black; }
-    </style>
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     
+     <!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
-<body>
-    <h1>Hello World!</h1>
+     
+     <script src="./js/jquery-3.4.1.min.js"></script>
+    <title>Ứng Dụng Theo Dõi Mật Độ Bụi Trong Không Khí</title>
+  </head>
+  <body>
 
-    We are using Node.js <span id="node-version"></span>, Chromium <span id="chrome-version"></span>, Electron <span id="electron-version"></span>, and Serialport <span id="serialport-version"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="text-center">Ứng Dụng Theo Dõi Mật Độ Bụi<br> Trong Không Khí</h1>
+                <div id="chart" style="min-height: 365px;"></div>
+            </div>
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Serial Port</label>
+                      <select class="form-control" id="ports">
+                      </select>
+                    </div>
+                    <button id="buttonUpdate" type="button" class="btn btn-primary" onclick="updatePort($('select').val())">Đọc Dữ Liệu</button>
+                  </form>
+                
+            </div>
+        </div>
+    </div>
 
-    <div id="error"></div>
-    <div id="ports"></div>
-</body>
+    <!-- Optional JavaScript -->
+   
 
-<script src="./renderer.js"></script>
+    <script src="./dists/apexcharts.min.js"></script>
+    <script src="./renderer.js"></script>
 
+    <!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+  </body>
 </html>

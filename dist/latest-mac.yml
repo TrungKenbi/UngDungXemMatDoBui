@@ -1,0 +1,12 @@
+version: 1.0.0
+files:
+  - url: ung-dung-xem-mat-do-bui-1.0.0-mac.zip
+    sha512: KuVYBHM5pouXrPCVW7lU5djQVszwIFXTTGyM7El3I4udHSPZdUzDy1ug0ALoOMM1QHVR0+R9RkiupqxJJr88Ow==
+    size: 55087772
+    blockMapSize: 59163
+  - url: ung-dung-xem-mat-do-bui-1.0.0.dmg
+    sha512: 4UUqzTti9XMNlAy0GLm2tld4oT/+pl8GFv0zsGvjf1nUnFtmKmlo8wpWXpWEufBQL3VljTYoX3LnvrWBJDjP5Q==
+    size: 57366340
+path: ung-dung-xem-mat-do-bui-1.0.0-mac.zip
+sha512: KuVYBHM5pouXrPCVW7lU5djQVszwIFXTTGyM7El3I4udHSPZdUzDy1ug0ALoOMM1QHVR0+R9RkiupqxJJr88Ow==
+releaseDate: '2019-12-27T20:26:02.061Z'

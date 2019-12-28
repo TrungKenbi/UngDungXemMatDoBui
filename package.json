@@ -1,31 +1,28 @@
 {
-    "name": "electron-serialport",
-    "version": "1.0.1",
-    "description": "A minimal Electron application with node serialport",
+    "name": "ung-dung-xem-mat-do-bui",
+    "version": "1.0.0",
+    "description": "Ung dung xem mat do bui trong khong khi",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
-        "install": "electron-rebuild"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:johnny-five-io/electron-serialport.git"
+        "postinstall": "electron-builder install-app-deps",
+        "install": "electron-rebuild",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder",
+        "pro": "electron-builder -mw"
     },
     "keywords": [
-        "Electron",
-        "quick",
-        "start",
-        "tutorial",
-        "demo"
+        "xem mat do bui"
     ],
-    "author": "GitHub",
+    "author": "TrungKenbi",
     "license": "CC0-1.0",
     "devDependencies": {
-        "electron": "^5.0.5",
+        "electron": "4.0.3",
+        "electron-builder": "^21.2.0",
         "electron-rebuild": "^1.8.5"
     },
     "dependencies": {
-        "serialport": "^7.1.5",
-        "tableify": "^1.1.0"
+        "@serialport/parser-readline": "^8.0.6",
+        "serialport": "^7.1.5"
     }
 }
